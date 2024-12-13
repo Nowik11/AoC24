@@ -22,6 +22,7 @@ public class Main {
         //System.out.println(Zadanie10.wykonaj_b());
         //System.out.println(Zadanie11.wykonaj_b(75));
        // System.out.println(Zadanie12.wykonaj_b());
-        System.out.println(Zadanie13.wykonaj_b());
+        Zadanie13 z = new Zadanie13();
+        System.out.println(z.wykonaj_b());
     }
 }
