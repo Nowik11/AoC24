@@ -48,6 +48,29 @@ public class Wczytywanie {
             System.out.println("złe dane :(");
         }
     }
+    public static void wczytaj14(ArrayList<zad14_wektory> lista   , String nazwa)
+    {
+        try {
+            File file = new File("src/dane/" + nazwa);
+            Scanner sc = new Scanner(file);
+            String temp;
+            while(sc.hasNextLine()) {
+                temp = sc.nextLine();
+                temp=temp.replace("p=", " ");
+                temp=temp.replace("v=", " ");
+                temp=temp.replace(',' , ' ');
+                Scanner sc2 = new Scanner(temp);
+                int px = sc2.nextInt();
+                int py = sc2.nextInt();
+                int vx = sc2.nextInt();
+                int vy = sc2.nextInt();
+                lista.add(new zad14_wektory(vx, vy, px, py));
+            }
+        }
+        catch (FileNotFoundException e) {
+            System.out.println("złe dane :(");
+        }
+    }
 
     public static void zjebane_wczytanie(HashMap<Integer , Set<Integer>> map, String nazwa)
     {
