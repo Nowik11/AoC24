@@ -213,12 +213,15 @@ public class Wczytywanie {
             System.out.println("smuteczek no :(");
         }
     }
-    public static String wczytaj(String lista, String nazwa)
+    public static String wczytaj( String nazwa)
     {
         try{
             File file = new File("src/dane/" + nazwa);
             Scanner sc= new Scanner(file);
-            return  sc.nextLine();
+            String temp="";
+            while(sc.hasNextLine())
+                temp+=sc.nextLine();
+            return temp;
         }
         catch(Exception e)
         {

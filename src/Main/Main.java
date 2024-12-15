@@ -35,12 +35,12 @@ public class Main {
         //Zadanie13 z = new Zadanie13();
         //System.out.println(z.wykonaj_b());
         //System.out.println(Zadanie14.wykonaj_a());
-        int i =1;
-
-        while(true)
-        {
-            Zadanie14.wykonaj_bXD(i);
-            i++;
-        }
+//        int i =1;
+//        while(true)
+//        {
+//            Zadanie14.wykonaj_bXD(i);
+//            i++;
+//        }
+        System.out.println(Zadanie15.wykonaj_b());
     }
 }

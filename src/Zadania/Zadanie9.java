@@ -7,7 +7,7 @@ public class Zadanie9 {
     public static long wykonaj_a()
     {
         String lista= "";
-      lista=  Wczytywanie.wczytaj(lista,"zadanie9.txt");
+      lista=  Wczytywanie.wczytaj("zadanie9.txt");
         ArrayList<Integer> dysk = new ArrayList<>();
         for(int i=0;i<lista.length();i++)
         {
@@ -45,7 +45,7 @@ public class Zadanie9 {
     public static long wykonaj_b()
     {
         String lista= "";
-        lista=  Wczytywanie.wczytaj(lista,"zadanie9.txt");
+        lista=  Wczytywanie.wczytaj("zadanie9.txt");
         ArrayList<Integer> dysk = new ArrayList<>();
         for(int i=0;i<lista.length();i++)
         {
